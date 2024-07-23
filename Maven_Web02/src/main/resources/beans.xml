@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="tbUserDao" class="com.great.database.TbUserDaoImpl" autowire="byType"> </bean>
+<!--autowire自动装配-->
+<bean id="tbOrderDao" class="com.great.database.TbOrdersDaoImpl" autowire="byType"></bean>
+<!--    接口和抽象类不能实例化，所以接口和抽象类不能被SPRING容易管理-->
+<!--    <bean id="testdao" class="com.great.database.TbUserDAO"> </bean>-->
+<bean id="userService" class="com.great.service.UserService" autowire="byType"></bean>
+<bean id="orderService" class="com.great.service.OrderService" autowire="byType"></bean>
+</beans>

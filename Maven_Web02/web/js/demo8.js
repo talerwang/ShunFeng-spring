@@ -1,0 +1,32 @@
+$(function(){
+	//淡入
+	$("#fedein").click(function()
+	{
+		$("#image").fadeIn(1000);
+	});
+	//淡出
+	$("#fedeout").click(function()
+	{
+		$("#image").fadeOut(1000);
+	});
+	//展开
+	$("#slideDown").click(function()
+	{
+		$("#image").slideDown(1000);
+	});
+	//收起
+	$("#slideUp").click(function()
+	{
+		$("#image").slideUp(1000);
+	});
+	$("#moveRight").click(function()
+	{
+		$("#image").animate({left:'+=100px'},2000);
+	});
+	$("#startAnimation").click(function(){
+		$("#box").fadeIn(1000)
+						.animate({left:'+=100px'},1000)
+								.animate({width:'+=50',height:"+=50px"},1000);
+	
+	});
+})

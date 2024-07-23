@@ -1,0 +1,27 @@
+body{
+	margin: 100px;
+	height: 800px;
+	border: 1px solid red;
+	/* 把body进行相对的定位但又不设置偏移量，那么body的父元素就是窗体，
+	那么这个body的左上角就和窗体的左上角重合 */
+	position: relative;
+}
+header{
+	width: 100px;
+	height: 100px;
+	background-color: chartreuse;
+/* 	绝对定位:脱离文档流,根据窗口左上角坐标进行参考 */
+/*因为body的左上角和窗体的左上角重合，
+所以absolu本来就是针对窗体左上角作为参考基准点，现在变成了对body左上角作为参考点 */
+	position: absolute;
+	top: 30px;
+	left: 30px;
+/* 	相对定位:没有脱离文档流,根据父标签左上角左上角坐标进行参考 */
+/* 	position: relative;
+	top: 300px;
+	left: 300px; */
+/* 	滚动定位:脱离文档流,根据窗口左上角左上角坐标进行参考，随着滑动而滑动 */
+	/* position: fixed;
+	top: 0px;
+	left: 0px; */
+}

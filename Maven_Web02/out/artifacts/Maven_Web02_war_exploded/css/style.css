@@ -1,0 +1,27 @@
+body{
+	margin: 0;
+}
+table{
+	/* width: 960px; */
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+.header
+{
+	height: 120px;
+	background-color: aqua;
+}
+.aside{
+	width: 200px;
+	height: 500px;
+	background-color: purple;
+}
+.section{
+	width: 760px;
+	background-color: maroon;
+}
+.footer{
+	height: 240px;
+	background-color: gray;
+}

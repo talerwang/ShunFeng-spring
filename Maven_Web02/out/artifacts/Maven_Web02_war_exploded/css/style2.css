@@ -1,0 +1,29 @@
+body{
+	margin: 0;
+}
+header{
+	height: 120px;
+	background-color: aqua;
+}
+aside{
+	/* width: 200px; */
+	width: 20%;
+	height: 500px;
+	background-color: purple;
+	/* border: 5px solid green; */
+	padding: 100px;
+	box-sizing: border-box;
+	float: left;
+}
+section{
+	/* width: 760px; */
+	width: 80%;
+	height: 500px;
+	background-color: maroon;
+	float: left;
+}
+footer{
+	height: 120px;
+	background-color: gray;
+	clear: both;
+}
